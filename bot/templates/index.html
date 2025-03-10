@@ -28,7 +28,7 @@
                 <a href="{{ url_for('pizza_detail', pizza_id=pizza.id) }}">
 
                     <img src="{{ url_for('static', path=pizza.image)  | replace('http://', 'https://') }}" alt="{{ pizza.name }}">
-                    <p>Путь до картинки: {{ url_for('static', path=pizza["image"]) }}</p>
+
                     <p>{{ pizza.name }}</p>
                 </a>
             {% endfor %}
