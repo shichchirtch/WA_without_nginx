@@ -30,15 +30,15 @@ f_api.mount("/static", StaticFiles(directory=static_dir), name="static")
 templates = Jinja2Templates(directory=templ_dir)
 
 pizzas = [
-    {"id": 1, "name": "Margo", "image": "margherita.png",
+    {"id": 1, "name": "Margorita", "image": "margherita.png",
      "description": "Томатный соус, моцарелла, базилик.",
      'price': 15},
-    {"id": 2, "name": "Peppe", "image": "pepperoni.png",
+    {"id": 2, "name": "Pepperoni", "image": "pepperoni.png",
      "description": "Томатный соус, моцарелла, пепперони.",
      'price': 16},
     {"id": 3, "name": "Four Cheese", "image": "four_cheese.png",
      "description": "Моцарелла, пармезан, горгонзола, эмменталь.", 'price': 17},
-    {"id": 4, "name": "Hawai", "image": "hawaiian.png",
+    {"id": 4, "name": "Hawaii", "image": "hawaiian.png",
      "description": "Томатный соус, моцарелла, ананасы, ветчина.", 'price': 18}
 ]
 server_cart = []
