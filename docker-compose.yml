@@ -1,0 +1,10 @@
+services:
+  bot:
+    build: .
+    restart: always
+    ports:
+      - "8000:8000"  # <-- Открываем порт для FastAPI
+    environment:
+      - env/main.env
+
+
